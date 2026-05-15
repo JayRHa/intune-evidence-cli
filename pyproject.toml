@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intune-evidence-cli"
+version = "0.1.0"
+description = "Agent-friendly Microsoft Intune evidence collection for devices, policies, compliance and apps."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Jannik Reinhard", email = "contact@jannikreinhard.com"}]
+keywords = ["microsoft-intune", "microsoft-graph", "endpoint-management", "cli", "evidence"]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://github.com/JayRHa/IntuneEvidenceCLI"
+Repository = "https://github.com/JayRHa/IntuneEvidenceCLI"
+Issues = "https://github.com/JayRHa/IntuneEvidenceCLI/issues"
+
+[project.scripts]
+intune-evidence = "intune_evidence_cli.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
