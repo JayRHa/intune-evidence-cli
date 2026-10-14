@@ -24,9 +24,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/JayRHa/IntuneEvidenceCLI"
-Repository = "https://github.com/JayRHa/IntuneEvidenceCLI"
-Issues = "https://github.com/JayRHa/IntuneEvidenceCLI/issues"
+Homepage = "https://github.com/JayRHa/intune-evidence-cli"
+Repository = "https://github.com/JayRHa/intune-evidence-cli"
+Issues = "https://github.com/JayRHa/intune-evidence-cli/issues"
 
 [project.scripts]
 intune-evidence = "intune_evidence_cli.cli:main"
